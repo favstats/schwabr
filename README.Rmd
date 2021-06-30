@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# schwabr
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+The goal of `schwabr` is to translate German into Swabian (German dialect). `schwabr` is built upon [this tool](https://www.topster.de/deutsch-schwaebisch/) and simply provides an interface to it.
+
+## Installation
+
+You can install the development version of `schwabr` from GitHub with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("favstats/schwabr")
+```
+
+## Example
+
+This is a basic example:
+
+```{r example}
+library(schwabr)
+## basic example code
+```
+
+
+```{r}
+get_schwab("Was geht heute noch meine Kerle")
+```
+
+
+```{r}
+get_schwab("arbeiten, arbeiten, Haus bauen")
+```
+
+
+```{r}
+get_schwab("Ich würde gerne Maultaschen essen. Oder doch vielleicht Spätzle mit Soße.")
+```
