@@ -3,9 +3,13 @@
 #' Translates German to Swabian
 #'
 #'
-#' @param txt provide a text you want to translate from German into Swabian
+#' @param txt provide a text you want to translate from German into Swabian (a maximum of 1009 characters per call)
 #' @export
 get_schwab <- function(txt) {
+
+  if(stringr::str_count(txt)>1009){
+    stop("Your text should be shorter than 1009 characters.")
+  }
 
   html <- rvest::session("https://www.topster.de/deutsch-schwaebisch/")
   schwabform <- rvest::html_form(html)[[2]]
