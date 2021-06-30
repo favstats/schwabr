@@ -18,3 +18,5 @@ Imports:
     magrittr,
     stringr,
     rvest
+URL: https://github.com/favstats/schwabr
+BugReports: https://github.com/favstats/schwabr/issues
