@@ -7,7 +7,7 @@
 get_schwab(txt)
 }
 \arguments{
-\item{txt}{provide a text you want to translate from German into Swabian}
+\item{txt}{provide a text you want to translate from German into Swabian (a maximum of 1009 characters per call)}
 }
 \description{
 Translates German to Swabian

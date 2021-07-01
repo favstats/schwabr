@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of `schwabr` is to translate German into Swabian (German dialect). `schwabr` is built upon [this tool](https://www.topster.de/deutsch-schwaebisch/) and simply provides an interface to it.
+The goal of `schwabr` is to translate German into Swabian (German dialect) and other German dialects. `schwabr` is built upon tools such as [this ](https://www.topster.de/deutsch-schwaebisch/) and [this](https://www.respekt-empire.de/Translator/?page=translateEngine);  and simply provides an interface to them.
 
 ## Installation
 
@@ -52,4 +52,12 @@ get_schwab("arbeiten, arbeiten, Haus bauen")
 
 ```{r}
 get_schwab("Ich würde gerne Maultaschen essen. Oder doch vielleicht Spätzle mit Soße.")
+```
+
+```{r}
+get_bairisch("Guten Tag. Mein Name Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
+```
+
+```{r}
+get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen.")
 ```

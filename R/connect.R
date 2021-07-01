@@ -26,5 +26,19 @@ get_schwab <- function(txt) {
   return(fin)
 }
 
+#' get_bairisch
+#'
+#' Translates German to Bavarian
+#'
+#'
+#' @param txt provide a text you want to translate from German into Bavarian
+#' @export
+get_bairisch <- function(txt) {
+  html <- rvest::session("https://www.respekt-empire.de/Translator/?page=translateEngine")
 
-
+  bayerform <- rvest::html_form(html)[[1]]
+  bayerform_in <- rvest::html_form_set(bayerform, tr_text = txt)
+  resp <- rvest::html_form_submit(bayerform_in)
+  fin <- rvest::read_html(resp) %>% rvest::html_nodes("#translatedtext") %>% rvest::html_text() %>% stringr::str_squish()
+  return(fin)
+}

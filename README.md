@@ -10,9 +10,10 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of `schwabr` is to translate German into Swabian (German
-dialect). `schwabr` is built upon [this
-tool](https://www.topster.de/deutsch-schwaebisch/) and simply provides
-an interface to it.
+dialect) and other German dialects. `schwabr` is built upon tools such
+as [this](https://www.topster.de/deutsch-schwaebisch/) and
+[this](https://www.respekt-empire.de/Translator/?page=translateEngine);
+and simply provides an interface to them.
 
 ## Installation
 
@@ -45,4 +46,14 @@ get_schwab("arbeiten, arbeiten, Haus bauen")
 ``` r
 get_schwab("Ich würde gerne Maultaschen essen. Oder doch vielleicht Spätzle mit Soße.")
 #> [1] "I würd gern Herrgottsbscheiserle essa. Odr do vielleichd Schbädzle mid Soße."
+```
+
+``` r
+get_bairisch("Guten Tag. Mein Name Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
+#> [1] "Guadn Dog. Mei Nama Franz Beckenbaua. I kimm aus Minga und do bin i dahoam."
+```
+
+``` r
+get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen.")
+#> [1] "I würde gern Erdapfekaas essn. Heid hob i Semme zum Friahstück ggssn."
 ```
