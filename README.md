@@ -49,11 +49,11 @@ get_schwab("Ich würde gerne Maultaschen essen. Oder doch vielleicht Spätzle mi
 ```
 
 ``` r
-get_bairisch("Guten Tag. Mein Name Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
-#> [1] "Guadn Dog. Mei Nama Franz Beckenbaua. I kimm aus Minga und do bin i dahoam."
+get_bairisch("Guten Tag. Mein Name ist Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
+#> [1] "Guadn Dog. Mei Nama is Franz Beckenbaua. I kimm aus Minga und do bin i dahoam."
 ```
 
 ``` r
-get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen.")
-#> [1] "I würde gern Erdapfekaas essn. Heid hob i Semme zum Friahstück ggssn."
+get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen. Tschüss!")
+#> [1] "I würde gern Erdapfekaas essn. Heid hob i Semme zum Friahstück ggssn. Servus!"
 ```

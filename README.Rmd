@@ -55,9 +55,9 @@ get_schwab("Ich würde gerne Maultaschen essen. Oder doch vielleicht Spätzle mi
 ```
 
 ```{r}
-get_bairisch("Guten Tag. Mein Name Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
+get_bairisch("Guten Tag. Mein Name ist Franz Beckenbauer. Ich komme aus München und da bin ich daheim.")
 ```
 
 ```{r}
-get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen.")
+get_bairisch("Ich würde gerne Kartoffelkäse essen. Heute habe ich Brötchen zum Frühstück gegessen. Tschüss!")
 ```
