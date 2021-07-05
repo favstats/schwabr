@@ -36,14 +36,23 @@ This is a basic example:
 
 ```{r example}
 library(schwabr)
-## basic example code
+
 ```
 
 
 ```{r}
-get_schwab("Was geht heute noch meine Kerle")
+get_schwab("Heute gab es zum Frühstück ein Brötchen mit Marmelade.")
 ```
 
+
+```{r}
+get_schwab("Mein Haus erreiche ich manchmal mit dem Zug schneller als mit meinem Wagen.")
+```
+
+
+```{r}
+get_schwab("Gibst du mir etwas Klebstoff, damit ich die Sticker ankleben kann. Ich schlag dann ganz arg darauf. Hoffentlich ist das nicht gleich kaputt.")
+```
 
 ```{r}
 get_schwab("arbeiten, arbeiten, Haus bauen")
